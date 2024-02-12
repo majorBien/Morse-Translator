@@ -118,9 +118,9 @@ int main(void)
 
 	  	  lcd_put_cur(0, cursor1);
  	  	  lcd_send_string ("*");
-           HAL_Delay(10);
-           znak[cursor1] = 0;
-           cursor1 ++;
+          	  HAL_Delay(10);
+          	  znak[cursor1] = 0;
+          	   cursor1 ++;
  	  	  HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin, GPIO_PIN_SET);
  	  	  HAL_Delay(1000);
  	  	  HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin, GPIO_PIN_RESET);
@@ -130,9 +130,9 @@ int main(void)
  	  	  	  {
  	  	  lcd_put_cur(0, cursor1);
  	  	  lcd_send_string ("-");
-           HAL_Delay(10);
-           znak[cursor1] = 1;
-           cursor1 ++;
+          	  HAL_Delay(10);
+         	  znak[cursor1] = 1;
+         	  cursor1 ++;
  	  	  HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin, GPIO_PIN_SET);
  	  	  HAL_Delay(3000);
  	  	  HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin, GPIO_PIN_RESET);
@@ -141,394 +141,395 @@ int main(void)
  	  	  	  }
  	 if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET&&znak[0]==0&&znak[1]==1&&cursor1==2) //tworzenie litery a
  	 {
- 		     HAL_Delay(250);
- 		     HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
- 		     lcd_put_cur(0,0);
- 		 	 lcd_send_string ("               ");
-             cursor1 =0;
- 			 lcd_put_cur(1, cursor2);
- 			 lcd_send_string ("a");
- 			 cursor2++;
- 			 HAL_Delay(100);
- 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+ 		 HAL_Delay(250);
+ 		 HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+ 		 lcd_put_cur(0,0);
+ 		 lcd_send_string ("               ");
+                 cursor1 =0;
+ 		 lcd_put_cur(1, cursor2);
+ 		 lcd_send_string ("a");
+ 		 cursor2++;
+ 		 HAL_Delay(100);
+ 		 HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
 
 
  	 }
 
  	 if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET&&znak[0]==1&&znak[1]==0&&znak[2]==0&&znak[3]==0&&cursor1==4) //tworzenie litery b
  	 	 {
- 		         HAL_Delay(250);
- 	 		     HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
- 	 		     lcd_put_cur(0,0);
- 	 		 	 lcd_send_string ("               ");
- 	             cursor1 =0;
- 	 			 lcd_put_cur(1, cursor2);
- 	 			 lcd_send_string ("b");
- 	 			 cursor2++;
- 	 			 HAL_Delay(100);
- 	 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+ 		 HAL_Delay(250);
+ 	 	 HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+ 	 	 lcd_put_cur(0,0);
+ 	 	 lcd_send_string ("               ");
+ 	         cursor1 =0;
+ 	 	 lcd_put_cur(1, cursor2);
+ 	 	 lcd_send_string ("b");
+ 	 	 cursor2++;
+ 	 	 HAL_Delay(100);
+ 	 	 HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
 
  	 	 }
  	 if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET&&znak[0]==1&&znak[1]==0&&znak[2]==1&&znak[3]==0&&cursor1==4) //tworzenie litery c
  	 	 {
- 		         HAL_Delay(250);
- 	 		     HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
- 	 		     lcd_put_cur(0,0);
- 	 		 	 lcd_send_string ("               ");
- 	             cursor1 =0;
- 	 			 lcd_put_cur(1, cursor2);
- 	 			 lcd_send_string ("c");
- 	 			 cursor2++;
- 	 			 HAL_Delay(100);
- 	 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+ 		 HAL_Delay(250);
+ 	 	 HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+ 	 	 lcd_put_cur(0,0);
+ 	 	 lcd_send_string ("               ");
+ 	         cursor1 =0;
+ 	 	 lcd_put_cur(1, cursor2);
+ 	 	 lcd_send_string ("c");
+ 	 	 cursor2++;
+ 	 	 HAL_Delay(100);
+ 	 	 HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
 
  	 	 }
  	 if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET&&znak[0]==1&&znak[1]==0&&znak[2]==0&&cursor1==3) //tworzenie litery d
  	 	 {
- 		         HAL_Delay(250);
- 	 		     HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
- 	 		     lcd_put_cur(0,0);
- 	 		 	 lcd_send_string ("               ");
- 	             cursor1 =0;
- 	 			 lcd_put_cur(1, cursor2);
- 	 			 lcd_send_string ("d");
- 	 			 cursor2++;
- 	 			 HAL_Delay(100);
- 	 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+ 		HAL_Delay(250);
+ 	 	HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+ 	 	lcd_put_cur(0,0);
+ 	 	lcd_send_string ("               ");
+ 	        cursor1 =0;
+ 	 	lcd_put_cur(1, cursor2);
+ 	 	lcd_send_string ("d");
+ 	 	cursor2++;
+ 	 	HAL_Delay(100);
+ 	 	HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
 
  	 	 }
  	 if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET&&znak[0]==0&&cursor1==1) //tworzenie litery e
  	 	 {
- 		         HAL_Delay(250);
- 	 		     HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
- 	 		     lcd_put_cur(0,0);
- 	 		 	 lcd_send_string ("               ");
- 	             cursor1 =0;
- 	 			 lcd_put_cur(1, cursor2);
- 	 			 lcd_send_string ("e");
- 	 			 cursor2++;
- 	 			 HAL_Delay(100);
- 	 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+ 		HAL_Delay(250);
+ 	 	HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+ 	 	lcd_put_cur(0,0);
+ 	 	lcd_send_string ("               ");
+ 	        cursor1 =0;
+ 	 	lcd_put_cur(1, cursor2);
+ 	 	lcd_send_string ("e");
+ 	 	cursor2++;
+ 	 	HAL_Delay(100);
+ 	 	HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
 
  	 	 }
  	 if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET&&znak[0]==0&&znak[1]==0&&znak[2]==1&&znak[3]==0&&cursor1==4) //tworzenie litery f
  	 	 {
- 		         HAL_Delay(250);
- 	 		     HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
- 	 		     lcd_put_cur(0,0);
- 	 		 	 lcd_send_string ("               ");
- 	             cursor1 =0;
- 	 			 lcd_put_cur(1, cursor2);
- 	 			 lcd_send_string ("f");
- 	 			 cursor2++;
- 	 			 HAL_Delay(100);
- 	 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+ 		HAL_Delay(250);
+ 	 	HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+ 	 	lcd_put_cur(0,0);
+ 	 	lcd_send_string ("               ");
+ 	        cursor1 =0;
+ 	 	lcd_put_cur(1, cursor2);
+ 	 	lcd_send_string ("f");
+ 	 	cursor2++;
+ 	 	HAL_Delay(100);
+ 	 	HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
 
  	 	 }
 
  	 if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET&&znak[0]==1&&znak[1]==1&&znak[2]==0&&cursor1==3) //tworzenie litery g
  	 	 {
- 		         HAL_Delay(250);
- 	 		     HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
- 	 		     lcd_put_cur(0,0);
- 	 		 	 lcd_send_string ("               ");
- 	             cursor1 =0;
- 	 			 lcd_put_cur(1, cursor2);
- 	 			 lcd_send_string ("g");
- 	 			 cursor2++;
- 	 			 HAL_Delay(100);
- 	 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+ 		HAL_Delay(250);
+ 	 	HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+ 	 	lcd_put_cur(0,0);
+ 	 	lcd_send_string ("               ");
+ 	        cursor1 =0;
+ 	 	lcd_put_cur(1, cursor2);
+ 	 	lcd_send_string ("g");
+ 	 	cursor2++;
+ 	 	HAL_Delay(100);
+ 	 	HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
 
  	 	 }
 
  	 if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET&&znak[0]==0&&znak[1]==0&&znak[2]==0&&znak[3]==0&&cursor1==4) //tworzenie litery h
  	 	 {
- 		         HAL_Delay(250);
- 	 		     HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
- 	 		     lcd_put_cur(0,0);
- 	 		 	 lcd_send_string ("               ");
- 	             cursor1 =0;
- 	 			 lcd_put_cur(1, cursor2);
- 	 			 lcd_send_string ("h");
- 	 			 cursor2++;
- 	 			 HAL_Delay(100);
- 	 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+ 		HAL_Delay(250);
+ 	 	HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+ 	 	lcd_put_cur(0,0);
+ 	 	lcd_send_string ("               ");
+ 	        cursor1 =0;
+ 	 	lcd_put_cur(1, cursor2);
+ 	 	lcd_send_string ("h");
+ 	 	cursor2++;
+ 	 	HAL_Delay(100);
+ 	 	HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
 
  	 	 }
 
  	 if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET&&znak[0]==0&&znak[1]==0&&cursor1==2) //tworzenie litery i
  	 	 {
- 		         HAL_Delay(250);
- 	 		     HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
- 	 		     lcd_put_cur(0,0);
- 	 		 	 lcd_send_string ("               ");
- 	             cursor1 =0;
- 	 			 lcd_put_cur(1, cursor2);
- 	 			 lcd_send_string ("i");
- 	 			 cursor2++;
- 	 			 HAL_Delay(100);
- 	 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+ 		HAL_Delay(250);
+ 	 	HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+ 	 	lcd_put_cur(0,0);
+ 	 	lcd_send_string ("               ");
+ 	        cursor1 =0;
+ 	 	lcd_put_cur(1, cursor2);
+ 	 	lcd_send_string ("i");
+ 	 	cursor2++;
+ 	 	HAL_Delay(100);
+ 	 	HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
 
  	 	 }
 
  	 if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET&&znak[0]==0&&znak[1]==1&&znak[2]==1&&znak[3]==1&&cursor1==4) //tworzenie litery j
  	 	 {
- 		         HAL_Delay(250);
- 	 		     HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
- 	 		     lcd_put_cur(0,0);
- 	 		 	 lcd_send_string ("               ");
- 	             cursor1 =0;
- 	 			 lcd_put_cur(1, cursor2);
- 	 			 lcd_send_string ("j");
- 	 			 cursor2++;
- 	 			 HAL_Delay(100);
- 	 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+ 		 HAL_Delay(250);
+ 	 	 HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+ 	 	 lcd_put_cur(0,0);
+ 	 	 lcd_send_string ("               ");
+ 	         cursor1 =0;
+ 	 	 lcd_put_cur(1, cursor2);
+ 	 	 lcd_send_string ("j");
+ 	 	 cursor2++;
+ 	 	 HAL_Delay(100);
+ 	 	 HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
 
  	 	 }
 
  	if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET&&znak[0]==1&&znak[1]==0&&znak[2]==1&&cursor1==3) //tworzenie litery k
  	 	 	 {
- 	 		         HAL_Delay(250);
- 	 	 		     HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
- 	 	 		     lcd_put_cur(0,0);
- 	 	 		 	 lcd_send_string ("               ");
- 	 	             cursor1 =0;
- 	 	 			 lcd_put_cur(1, cursor2);
- 	 	 			 lcd_send_string ("k");
- 	 	 			 cursor2++;
- 	 	 			 HAL_Delay(100);
- 	 	 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+ 	 	 HAL_Delay(250);
+ 	 	 HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+ 	 	 lcd_put_cur(0,0);
+ 	 	 lcd_send_string ("               ");
+ 	 	 cursor1 =0;
+ 	 	 lcd_put_cur(1, cursor2);
+ 	 	 lcd_send_string ("k");
+ 	 	 cursor2++;
+ 	 	 HAL_Delay(100);
+ 	 	 HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
 
  	 	 	 }
 
 	 if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET&&znak[0]==0&&znak[1]==1&&znak[2]==0&&znak[3]==0&&cursor1==4) //tworzenie litery l
 	 	 {
-		         HAL_Delay(250);
-	 		     HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
-	 		     lcd_put_cur(0,0);
-	 		 	 lcd_send_string ("               ");
-	             cursor1 =0;
-	 			 lcd_put_cur(1, cursor2);
-	 			 lcd_send_string ("l");
-	 			 cursor2++;
-	 			 HAL_Delay(100);
-	 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+		HAL_Delay(250);
+	 	HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+	 	lcd_put_cur(0,0);
+	        lcd_send_string ("               ");
+	        cursor1 =0;
+	        lcd_put_cur(1, cursor2);
+	 	lcd_send_string ("l");
+	 	cursor2++;
+	 	HAL_Delay(100);
+	 	HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
 
 	 	 }
 	 if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET&&znak[0]==1&&znak[1]==1&&cursor1==2) //tworzenie litery m
-		 	 {
-			         HAL_Delay(250);
-		 		     HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
-		 		     lcd_put_cur(0,0);
-		 		 	 lcd_send_string ("               ");
-		             cursor1 =0;
-		 			 lcd_put_cur(1, cursor2);
-		 			 lcd_send_string ("m");
-		 			 cursor2++;
-		 			 HAL_Delay(100);
-		 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+		 {
+		 HAL_Delay(250);
+		 HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+		 lcd_put_cur(0,0);
+		 lcd_send_string ("               ");
+		 cursor1 =0;
+		 lcd_put_cur(1, cursor2);
+		 lcd_send_string ("m");
+		 cursor2++;
+		 HAL_Delay(100);
+		 HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
 
-		 	 }
+		  }
 	 if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET&&znak[0]==1&&znak[1]==0&&cursor1==2) //tworzenie litery n
-			 	 {
-				         HAL_Delay(250);
-			 		     HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
-			 		     lcd_put_cur(0,0);
-			 		 	 lcd_send_string ("               ");
-			             cursor1 =0;
-			 			 lcd_put_cur(1, cursor2);
-			 			 lcd_send_string ("n");
-			 			 cursor2++;
-			 			 HAL_Delay(100);
-			 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+		{
+		HAL_Delay(250);
+		HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+		lcd_put_cur(0,0);
+		lcd_send_string ("               ");
+		cursor1 =0;
+		lcd_put_cur(1, cursor2);
+		lcd_send_string ("n");
+		cursor2++;
+		HAL_Delay(100);
+		HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
 
-			 	 }
-	 if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET&&znak[0]==1&&znak[1]==1&&znak[2]==1&&cursor1==3) //tworzenie litery o
-				 	 {
-					         HAL_Delay(250);
-				 		     HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
-				 		     lcd_put_cur(0,0);
-				 		 	 lcd_send_string ("               ");
-				             cursor1 =0;
-				 			 lcd_put_cur(1, cursor2);
-				 			 lcd_send_string ("o");
-				 			 cursor2++;
-				 			 HAL_Delay(100);
-				 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+		}
 
-				 	 }
 
-	 if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET&&znak[0]==0&&znak[1]==1&&znak[2]==1&&znak[3]==0&&cursor1==4) //tworzenie litery p
-		 	 {
-			         HAL_Delay(250);
-		 		     HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
-		 		     lcd_put_cur(0,0);
-		 		 	 lcd_send_string ("               ");
-		             cursor1 =0;
-		 			 lcd_put_cur(1, cursor2);
-		 			 lcd_send_string ("p");
-		 			 cursor2++;
-		 			 HAL_Delay(100);
-		 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
 
-		 	 }
+	   if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET && znak[0]==1 && znak[1]==1 && znak[2]==1 && cursor1==3) //tworzenie litery o
+{
+    HAL_Delay(250);
+    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+    lcd_put_cur(0,0);
+    lcd_send_string ("               ");
+    cursor1 = 0;
+    lcd_put_cur(1, cursor2);
+    lcd_send_string ("o");
+    cursor2++;
+    HAL_Delay(100);
+    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+}
 
-	 if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET&&znak[0]==1&&znak[1]==1&&znak[2]==0&&znak[3]==1&&cursor1==4) //tworzenie litery q
-	 		 	 {
-	 			         HAL_Delay(250);
-	 		 		     HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
-	 		 		     lcd_put_cur(0,0);
-	 		 		 	 lcd_send_string ("               ");
-	 		             cursor1 =0;
-	 		 			 lcd_put_cur(1, cursor2);
-	 		 			 lcd_send_string ("q");
-	 		 			 cursor2++;
-	 		 			 HAL_Delay(100);
-	 		 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET && znak[0]==0 && znak[1]==1 && znak[2]==1 && znak[3]==0 && cursor1==4) //tworzenie litery p
+{
+    HAL_Delay(250);
+    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+    lcd_put_cur(0,0);
+    lcd_send_string ("               ");
+    cursor1 = 0;
+    lcd_put_cur(1, cursor2);
+    lcd_send_string ("p");
+    cursor2++;
+    HAL_Delay(100);
+    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+}
 
-	 		 	 }
-	 if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET&&znak[0]==0&&znak[1]==1&&znak[2]==0&&cursor1==3) //tworzenie litery r
-		 		 	 {
-		 			         HAL_Delay(250);
-		 		 		     HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
-		 		 		     lcd_put_cur(0,0);
-		 		 		 	 lcd_send_string ("               ");
-		 		             cursor1 =0;
-		 		 			 lcd_put_cur(1, cursor2);
-		 		 			 lcd_send_string ("r");
-		 		 			 cursor2++;
-		 		 			 HAL_Delay(100);
-		 		 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET && znak[0]==1 && znak[1]==1 && znak[2]==0 && znak[3]==1 && cursor1==4) //tworzenie litery q
+{
+    HAL_Delay(250);
+    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+    lcd_put_cur(0,0);
+    lcd_send_string ("               ");
+    cursor1 = 0;
+    lcd_put_cur(1, cursor2);
+    lcd_send_string ("q");
+    cursor2++;
+    HAL_Delay(100);
+    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+}
 
-		 		 	 }
-	 if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET&&znak[0]==0&&znak[1]==0&&znak[2]==0&&cursor1==3) //tworzenie litery s
-	 		 		 	 {
-	 		 			         HAL_Delay(250);
-	 		 		 		     HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
-	 		 		 		     lcd_put_cur(0,0);
-	 		 		 		 	 lcd_send_string ("               ");
-	 		 		             cursor1 =0;
-	 		 		 			 lcd_put_cur(1, cursor2);
-	 		 		 			 lcd_send_string ("s");
-	 		 		 			 cursor2++;
-	 		 		 			 HAL_Delay(100);
-	 		 		 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET && znak[0]==0 && znak[1]==1 && znak[2]==0 && cursor1==3) //tworzenie litery r
+{
+    HAL_Delay(250);
+    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+    lcd_put_cur(0,0);
+    lcd_send_string ("               ");
+    cursor1 = 0;
+    lcd_put_cur(1, cursor2);
+    lcd_send_string ("r");
+    cursor2++;
+    HAL_Delay(100);
+    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+}
 
-	 		 		 	 }
-	 if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET&&znak[0]==1&&cursor1==1) //tworzenie litery t
-	 	 		 		 	 {
-	 	 		 			         HAL_Delay(250);
-	 	 		 		 		     HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
-	 	 		 		 		     lcd_put_cur(0,0);
-	 	 		 		 		 	 lcd_send_string ("               ");
-	 	 		 		             cursor1 =0;
-	 	 		 		 			 lcd_put_cur(1, cursor2);
-	 	 		 		 			 lcd_send_string ("t");
-	 	 		 		 			 cursor2++;
-	 	 		 		 			 HAL_Delay(100);
-	 	 		 		 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET && znak[0]==0 && znak[1]==0 && znak[2]==0 && cursor1==3) //tworzenie litery s
+{
+    HAL_Delay(250);
+    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+    lcd_put_cur(0,0);
+    lcd_send_string ("               ");
+    cursor1 = 0;
+    lcd_put_cur(1, cursor2);
+    lcd_send_string ("s");
+    cursor2++;
+    HAL_Delay(100);
+    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+}
 
-	 	 		 		 	 }
-	 if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET&&znak[0]==0&&znak[1]==0&&znak[2]==1&&cursor1==3) //tworzenie litery u
-	 	 	 		 		 	 {
-	 	 	 		 			         HAL_Delay(250);
-	 	 	 		 		 		     HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
-	 	 	 		 		 		     lcd_put_cur(0,0);
-	 	 	 		 		 		 	 lcd_send_string ("               ");
-	 	 	 		 		             cursor1 =0;
-	 	 	 		 		 			 lcd_put_cur(1, cursor2);
-	 	 	 		 		 			 lcd_send_string ("u");
-	 	 	 		 		 			 cursor2++;
-	 	 	 		 		 			 HAL_Delay(100);
-	 	 	 		 		 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET && znak[0]==1 && cursor1==1) //tworzenie litery t
+{
+    HAL_Delay(250);
+    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+    lcd_put_cur(0,0);
+    lcd_send_string ("               ");
+    cursor1 = 0;
+    lcd_put_cur(1, cursor2);
+    lcd_send_string ("t");
+    cursor2++;
+    HAL_Delay(100);
+    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+}
 
-	 	 	 		 		 	 }
-	 if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET&&znak[0]==0&&znak[1]==0&&znak[2]==0&&znak[3]==1&&cursor1==4) //tworzenie litery v
-	 	 	 	 		 		 	 {
-	 	 	 	 		 			         HAL_Delay(250);
-	 	 	 	 		 		 		     HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
-	 	 	 	 		 		 		     lcd_put_cur(0,0);
-	 	 	 	 		 		 		 	 lcd_send_string ("               ");
-	 	 	 	 		 		             cursor1 =0;
-	 	 	 	 		 		 			 lcd_put_cur(1, cursor2);
-	 	 	 	 		 		 			 lcd_send_string ("v");
-	 	 	 	 		 		 			 cursor2++;
-	 	 	 	 		 		 			 HAL_Delay(100);
-	 	 	 	 		 		 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET && znak[0]==0 && znak[1]==0 && znak[2]==1 && cursor1==3) //tworzenie litery u
+{
+    HAL_Delay(250);
+    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+    lcd_put_cur(0,0);
+    lcd_send_string ("               ");
+    cursor1 = 0;
+    lcd_put_cur(1, cursor2);
+    lcd_send_string ("u");
+    cursor2++;
+    HAL_Delay(100);
+    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+}
 
-	 	 	 	 		 		 	 }
-	 if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET&&znak[0]==0&&znak[1]==1&&znak[2]==1&&cursor1==3) //tworzenie litery w
-	 	 	 	 	 		 		 	 {
-	 	 	 	 	 		 			         HAL_Delay(250);
-	 	 	 	 	 		 		 		     HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
-	 	 	 	 	 		 		 		     lcd_put_cur(0,0);
-	 	 	 	 	 		 		 		 	 lcd_send_string ("               ");
-	 	 	 	 	 		 		             cursor1 =0;
-	 	 	 	 	 		 		 			 lcd_put_cur(1, cursor2);
-	 	 	 	 	 		 		 			 lcd_send_string ("w");
-	 	 	 	 	 		 		 			 cursor2++;
-	 	 	 	 	 		 		 			 HAL_Delay(100);
-	 	 	 	 	 		 		 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET && znak[0]==0 && znak[1]==0 && znak[2]==0 && znak[3]==1 && cursor1==4) //tworzenie litery v
+{
+    HAL_Delay(250);
+    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+    lcd_put_cur(0,0);
+    lcd_send_string ("               ");
+    cursor1 = 0;
+    lcd_put_cur(1, cursor2);
+    lcd_send_string ("v");
+    cursor2++;
+    HAL_Delay(100);
+    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+}
 
-	 	 	 	 	 		 		 	 }
-	 if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET&&znak[0]==1&&znak[1]==0&&znak[2]==0&&znak[3]==1&&cursor1==4) //tworzenie litery x
-	 	 	 	 	 		 		 	 {
-	 	 	 	 	 		 			         HAL_Delay(250);
-	 	 	 	 	 		 		 		     HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
-	 	 	 	 	 		 		 		     lcd_put_cur(0,0);
-	 	 	 	 	 		 		 		 	 lcd_send_string ("               ");
-	 	 	 	 	 		 		             cursor1 =0;
-	 	 	 	 	 		 		 			 lcd_put_cur(1, cursor2);
-	 	 	 	 	 		 		 			 lcd_send_string ("x");
-	 	 	 	 	 		 		 			 cursor2++;
-	 	 	 	 	 		 		 			 HAL_Delay(100);
-	 	 	 	 	 		 		 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET && znak[0]==0 && znak[1]==1 && znak[2]==1 && cursor1==3) //tworzenie litery w
+{
+    HAL_Delay(250);
+    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+    lcd_put_cur(0,0);
+    lcd_send_string ("               ");
+    cursor1 = 0;
+    lcd_put_cur(1, cursor2);
+    lcd_send_string ("w");
+    cursor2++;
+    HAL_Delay(100);
+    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+}
 
-	 	 	 	 	 		 		 	 }
-	 if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET&&znak[0]==1&&znak[1]==0&&znak[2]==1&&znak[3]==1&&cursor1==4) //tworzenie litery y
-		 	 	 	 	 		 		 	 {
-		 	 	 	 	 		 			         HAL_Delay(250);
-		 	 	 	 	 		 		 		     HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
-		 	 	 	 	 		 		 		     lcd_put_cur(0,0);
-		 	 	 	 	 		 		 		 	 lcd_send_string ("               ");
-		 	 	 	 	 		 		             cursor1 =0;
-		 	 	 	 	 		 		 			 lcd_put_cur(1, cursor2);
-		 	 	 	 	 		 		 			 lcd_send_string ("y");
-		 	 	 	 	 		 		 			 cursor2++;
-		 	 	 	 	 		 		 			 HAL_Delay(100);
-		 	 	 	 	 		 		 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET && znak[0]==1 && znak[1]==0 && znak[2]==0 && znak[3]==1 && cursor1==4) //tworzenie litery x
+{
+    HAL_Delay(250);
+    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+    lcd_put_cur(0,0);
+    lcd_send_string ("               ");
+    cursor1 = 0;
+    lcd_put_cur(1, cursor2);
+    lcd_send_string ("x");
+    cursor2++;
+    HAL_Delay(100);
+    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+}
 
-		 	 	 	 	 		 		 	 }
-	 if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET&&znak[0]==1&&znak[1]==1&&znak[2]==0&&znak[3]==0&&cursor1==4) //tworzenie litery z
-			 	 	 	 	 		 		 	 {
-			 	 	 	 	 		 			         HAL_Delay(250);
-			 	 	 	 	 		 		 		     HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
-			 	 	 	 	 		 		 		     lcd_put_cur(0,0);
-			 	 	 	 	 		 		 		 	 lcd_send_string ("               ");
-			 	 	 	 	 		 		             cursor1 =0;
-			 	 	 	 	 		 		 			 lcd_put_cur(1, cursor2);
-			 	 	 	 	 		 		 			 lcd_send_string ("z");
-			 	 	 	 	 		 		 			 cursor2++;
-			 	 	 	 	 		 		 			 HAL_Delay(100);
-			 	 	 	 	 		 		 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET && znak[0]==1 && znak[1]==0 && znak[2]==1 && znak[3]==1 && cursor1==4) //tworzenie litery y
+{
+    HAL_Delay(250);
+    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+    lcd_put_cur(0,0);
+    lcd_send_string ("               ");
+    cursor1 = 0;
+    lcd_put_cur(1, cursor2);
+    lcd_send_string ("y");
+    cursor2++;
+    HAL_Delay(100);
+    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+}
 
-			 	 	 	 	 		 		 	 }
-	 if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET&&cursor1==0) //tworzenie litery z
-				 	 	 	 	 		 		 	 {
-				 	 	 	 	 		 			         HAL_Delay(250);
-				 	 	 	 	 		 		 		     HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
-				 	 	 	 	 		 		 		     lcd_put_cur(0,0);
-				 	 	 	 	 		 		 		 	 lcd_send_string ("               ");
-				 	 	 	 	 		 		             cursor1 =0;
-				 	 	 	 	 		 		 			 lcd_put_cur(1, cursor2);
-				 	 	 	 	 		 		 			 lcd_send_string (" ");
-				 	 	 	 	 		 		 			 cursor2++;
-				 	 	 	 	 		 		 			 HAL_Delay(100);
-				 	 	 	 	 		 		 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET && znak[0]==1 && znak[1]==1 && znak[2]==0 && znak[3]==0 && cursor1==4) //tworzenie litery z
+{
+    HAL_Delay(250);
+    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+    lcd_put_cur(0,0);
+    lcd_send_string ("               ");
+    cursor1 = 0;
+    lcd_put_cur(1, cursor2);
+    lcd_send_string ("z");
+    cursor2++;
+    HAL_Delay(100);
+    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+}
 
-				 	 	 	 	 		 		 	 }
-   }
-   }
+if(HAL_GPIO_ReadPin(B3_GPIO_Port, B3_Pin)== GPIO_PIN_RESET && cursor1==0) //tworzenie spacji
+{
+    HAL_Delay(250);
+    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+    lcd_put_cur(0,0);
+    lcd_send_string ("               ");
+    cursor1 = 0;
+    lcd_put_cur(1, cursor2);
+    lcd_send_string (" ");
+    cursor2++;
+    HAL_Delay(100);
+    HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+}
+   
+}
+   
 
 
 /**
